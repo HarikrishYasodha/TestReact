@@ -5,7 +5,7 @@
   "scripts": {
     
     "android": "react-native run-android",
-
+    "postinstall": "bash ./appcenter-pre-build.sh",
     "ios": "react-native run-ios",
 
     "start": "react-native start",
