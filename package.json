@@ -3,44 +3,29 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    
     "android": "react-native run-android",
-     
     "ios": "react-native run-ios",
-
     "start": "react-native start",
-
     "test": "jest --config=test_config/unit.json --rootDir --coverage --forceExit",
-
     "test-u": "npm run test -- -u",
-
     "lint": "eslint .",
-
     "lint-error": "eslint --quiet .",
-
     "java11": "export JAVA_HOME=`/usr/libexec/java_home -v 11.0`",
-
     "sonar": "npm run java11 && sonar-scanner",
-
     "open-apk": "open ./android/app/build/outputs/apk/release/",
-
     "android-apk": "npm run android-clean && cd android && ./gradlew assembleRelease && cd .. && npm run open-apk",
-
     "open-aab": "open ./android/app/build/outputs/bundle/release/",
-
     "android-aab": "npm run android-clean && cd android && ./gradlew bundleRelease && cd .. && npm run open-aab",
-
     "android-clean": "cd android && ./gradlew clean && cd ..",
     "build:ios": "react-native bundle --entry-file='index.js' --bundle-output='./ios/main.jsbundle' --dev=false --platform='ios'"
   },
-  
   "dependencies": {
-   
-    "react": "18.2.0",
-    "react-native": "0.72.3",
+    "@react-native-community/cli-platform-android": "11.3.6",
     "appcenter": "5.0.0",
     "appcenter-analytics": "5.0.0",
-    "appcenter-crashes": "5.0.0"
+    "appcenter-crashes": "5.0.0",
+    "react": "18.2.0",
+    "react-native": "0.72.3"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
