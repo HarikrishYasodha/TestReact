@@ -30,11 +30,12 @@ function App() {
         <Text
           style={{
             color: 'white',
-            margin: 6,
             fontWeight: '300',
             alignItems: 'center',
             textAlign: 'center',
             textAlignVertical: 'center',
+            width: 100,
+            height: 40,
           }}>
           Click me
         </Text>
