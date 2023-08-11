@@ -29,7 +29,7 @@ function App() {
         }}>
         <Text
           style={{
-            color: 'white',
+            color: 'black',
             fontWeight: '300',
             alignItems: 'center',
             textAlign: 'center',
